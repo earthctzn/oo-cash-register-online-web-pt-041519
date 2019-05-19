@@ -12,9 +12,7 @@ class CashRegister
   end
   
   def apply_discount(num = 0)
-    grand_total = @total - @total * num.to_f / 100
-    #binding.pry
-     grand_total
+    @total = @total - @total * num.to_f / 100
     return "After the discount, the total comes to $#{grand_total}"
   end 
   
