@@ -11,7 +11,7 @@ class CashRegister
   
   def apply_discount(num = 0)
     grand_total = @total - @total * num / 100
-    return "After the discount, the total comes to #{@total += grand_total}
+    return "After the discount, the total comes to $#{@total += grand_total}"
   end 
   
   def discount(num = 0)
