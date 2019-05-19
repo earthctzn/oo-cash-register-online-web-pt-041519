@@ -6,7 +6,7 @@ class CashRegister
   def initialize(total = 0, emp_disc = 0)
     @total = total
     @basket = []
-    #apply_discount(emp_disc)
+    discount(emp_disc)
   end
   
   def add_item(item, unit_price = 0.0)
@@ -14,7 +14,7 @@ class CashRegister
     @total += unit_price
   end
   
-  def apply_discount(num)
+  def discount(num)
     m = @total * num / 100
      @total - m
   end
