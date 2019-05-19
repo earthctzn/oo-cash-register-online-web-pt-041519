@@ -10,12 +10,13 @@ class CashRegister
   end
   
   def apply_discount(num = 0)
-    @total - @total * num / 100
+    grand_total = @total - @total * num / 100
+    @total += grand_total
   end 
   
   def discount(num = 0)
     grand_total = @total - @total * num / 100
-    #@total += grand_total
+    @total += grand_total
   end
   
   def total
