@@ -22,7 +22,7 @@ class CashRegister
   end
   
   def add_item(product_name, unit_price = 0.0, qty = 1)
-    @items << product_name
+    product_name.each{|x| @items << x}
     if qty > 1
       @total += unit_price * qty
     else
