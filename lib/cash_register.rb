@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :items, :total
 
 
-  def initialize(total = 0, emp_disc = 0)
+  def initialize(total = 0, emp_disc = nil)
     @total = total
     @emp_disc = emp_disc.to_f
     @shopping_cart = [ @items = []]
@@ -17,7 +17,8 @@ class CashRegister
   end 
   
   def discount
-    @emp_disc
+   if @emp_disc == nil
+     return "There is no discount to apply."
   end
     
   
