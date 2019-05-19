@@ -5,7 +5,7 @@ class CashRegister
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
-    @shopping_cart = {:item_name => :name{  }
+    @shopping_cart = {:item_name[] :name{  }
     discount(emp_disc)
   end
   
