@@ -20,8 +20,8 @@ class CashRegister
   
   # end
 
-    def items
-      @@basket[]
+    # def items
+    #   @@basket[]
       
     
  
