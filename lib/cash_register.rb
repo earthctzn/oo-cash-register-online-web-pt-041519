@@ -5,7 +5,7 @@ class CashRegister
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
-    @shopping_cart = {}
+    @shopping_cart = {:item_name => :name{  }
     discount(emp_disc)
   end
   
@@ -19,7 +19,7 @@ class CashRegister
   end
   
   def add_item(item, unit_price = 0.0, qty)
-    @shopping_cart[item.to_sym]
+    @shopping_cart[item.to_sym => unit_price,  ]
     @total += unit_price
   end
   
