@@ -3,7 +3,7 @@ class CashRegister
   attr_accessor :items 
 
 
-  def initialize(total = 0, emp_disc = )
+  def initialize(total = 0, emp_disc = 0)
     @total = total
     @basket = []
     #apply_discount(emp_disc)
