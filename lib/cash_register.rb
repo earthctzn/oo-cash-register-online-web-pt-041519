@@ -7,7 +7,7 @@ class CashRegister
     @total = total
     @discount = emp_disc
     @shopping_cart = {:names => @items = []}
-    #apply_discount(emp_disc)
+    apply_discount(emp_disc)
   end
   
   def apply_discount(num = 0)
