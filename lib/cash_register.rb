@@ -10,10 +10,11 @@ class CashRegister
     @shopping_cart = [ @items = []]
     apply_discount(emp_disc)
   end
-  binding.pry
+  
   def apply_discount(num = 0)
     grand_total = @total - @total * num.to_f / 100
     @total = grand_total
+    binding.pry
     return "After the discount, the total comes to $#{grand_total}"
   end 
   
