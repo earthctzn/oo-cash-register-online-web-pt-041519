@@ -6,7 +6,9 @@ class CashRegister
   def initialize(total = 0, emp_disc = 0)
     @total = total
     @shopping_cart = {:names => @items = []}
-    discount(emp_disc)
+    def self.discount(emp_disc)
+      @total - @total * emp_disc / 100
+    end
   end
   
   def discount(num = 0)
@@ -22,7 +24,7 @@ class CashRegister
     if qty > 1
       @total += unit_price * qty
     else
-    @total += unit_price
+      @total += unit_price
     end
   end
   
