@@ -1,7 +1,7 @@
 class CashRegister
   
   attr_accessor :items
-  @@basket = 
+  @@basket = {
 
   def initialize(total = 0.0, emp_disc = 0)
     @total = total
