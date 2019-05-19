@@ -1,7 +1,7 @@
 class CashRegister
   
   attr_accessor :items, :total
-  attr_reader :discount
+
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
@@ -35,8 +35,9 @@ class CashRegister
   
   # end
 
-    # def items
-    #   @@basket[]
+    def items
+     @items
+    end
       
     
  
