@@ -19,6 +19,7 @@ class CashRegister
   def discount
    if @emp_disc == nil
      return "There is no discount to apply."
+   end
   end
     
   
