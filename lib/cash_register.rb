@@ -26,8 +26,9 @@ class CashRegister
     while count < qty
       @total += unit_price
       @items << product_name
+      count += 1
     end
-    count += 1
+    
   end
   
   # def void_last_transaction()
