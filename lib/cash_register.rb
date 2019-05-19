@@ -14,7 +14,7 @@ class CashRegister
     grand_total = @total - @total * num / 100
     binding.pry
     @total = grand_total
-    return "After the discount, the total comes to $#{grand_total}"
+    return "After the discount, the total comes to $#{@total}"
   end 
 
   
