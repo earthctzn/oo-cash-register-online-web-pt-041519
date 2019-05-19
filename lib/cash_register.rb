@@ -3,7 +3,7 @@ class CashRegister
   attr_accessor :items, :total
 
 
-  def initialize(total = 0, emp_disc)
+  def initialize(total = 0, emp_disc = 0)
     @total = total
     @shopping_cart = {:names => @items}
     discount(emp_disc)
