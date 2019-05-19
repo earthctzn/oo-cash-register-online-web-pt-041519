@@ -19,7 +19,7 @@ class CashRegister
   end
   
   def add_item(item, unit_price = 0.0)
-    @@basket << item
+    @basket << item
     @total += unit_price
   end
   
