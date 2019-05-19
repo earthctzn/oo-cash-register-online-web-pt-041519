@@ -10,8 +10,8 @@ class CashRegister
   end
   
   def discount(num = 0)
-    m = @total * num / 100
-     @total - m
+    @total - @total * num / 100
+     
   end
   
   def total
