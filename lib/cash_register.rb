@@ -6,6 +6,7 @@ class CashRegister
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
+    @emp_disc = emp_disc
     @shopping_cart = {:names => @items = []}
     apply_discount(emp_disc)
   end
@@ -14,9 +15,13 @@ class CashRegister
     grand_total = @total - @total * num.to_f / 100
     #binding.pry
      grand_total
-    return "After the discount, the total comes to $#{@total}"
+    return "After the discount, the total comes to $#{@total - grand_total}"
   end 
-
+  
+  def discount
+    @emp_disc
+  end
+    
   
   def total
     @total
