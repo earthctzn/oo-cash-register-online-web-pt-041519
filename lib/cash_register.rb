@@ -5,7 +5,7 @@ class CashRegister
     @emp_disc = apply_discount
   end
   
-  def add_item()
+  def add_item(item, unit_price = 0.0)
   
   end
   
