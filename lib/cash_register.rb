@@ -18,8 +18,8 @@ class CashRegister
     @total
   end
   
-  def add_item(item, unit_price = 0.0, qty)
-    @shopping_cart[item.to_sym => unit_price,  ]
+  def add_item(item, unit_price = 0.0, qty = 1)
+    @shopping_cart[ ]
     @total += unit_price
   end
   
