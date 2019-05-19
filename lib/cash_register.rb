@@ -1,11 +1,12 @@
 class CashRegister
   
-  attr_accessor :items, :total
-  @@basket = []
+  attr_accessor :items 
 
-  def initialize(total = 0.0, emp_disc = 0)
+
+  def initialize(total = 0, emp_disc = 0)
     @total = total
-    apply_discount(emp_disc)
+    @basket = []
+    #apply_discount(emp_disc)
   end
   
   def add_item(item, unit_price = 0.0)
