@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :items, :total
 
 
-  def initialize(total = 0, emp_disc = nil)
+  def initialize(*total = 0)
     @total = total
     @emp_disc = emp_disc.to_f
     @shopping_cart = [ @items = []]
