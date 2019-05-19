@@ -16,11 +16,11 @@ class CashRegister
     return "After the discount, the total comes to $#{@total}"
   end 
   
-  def discount
-   if @emp_disc == nil
-     return "There is no discount to apply."
-   end
-  end
+  # def discount
+  # if @emp_disc == nil
+  #   return "There is no discount to apply."
+  # end
+  # end
     
   
   def total
