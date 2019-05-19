@@ -5,7 +5,7 @@ class CashRegister
 
   def initialize(total = 0, emp_disc = "There is no discount to apply.")
     @total = total
-    @shopping_cart = {:item}
+    @shopping_cart = {:names}
     discount(emp_disc)
   end
   
@@ -19,7 +19,7 @@ class CashRegister
   end
   
   def add_item(item, unit_price = 0.0, qty = 1)
-    @shopping_cart[ ]
+    @shopping_cart[names] = item
     @total += unit_price
   end
   
