@@ -23,7 +23,7 @@ class CashRegister
   
   def add_item(product_name, unit_price = 0.0, qty = 1)
     if qty > 1
-      @items << product_name * qty
+      @items(qty, product_name)
       @total += unit_price * qty
     else
       @total += unit_price
