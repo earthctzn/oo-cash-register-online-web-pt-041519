@@ -12,7 +12,7 @@ class CashRegister
     @@basket[item.to_sym => unit_price]
   end
   
-  def apply_discount()
+  #def apply_discount()
   
   # end
   
