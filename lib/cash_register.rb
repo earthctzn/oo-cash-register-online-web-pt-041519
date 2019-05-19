@@ -1,10 +1,11 @@
 class CashRegister
   
   attr_accessor :items, :total
-
+  attr_reader :emp_disc
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
+    @emp_disc = emp_disc
     @shopping_cart = {:names => @items = []}
     discount(emp_disc)
   end
@@ -14,8 +15,6 @@ class CashRegister
     return "After the discount, the total comes to $#{@total += grand_total}"
   end 
   
-  def discount(num = 0)
-    grand_total = @total - @total * num / 100
 
   end
   
