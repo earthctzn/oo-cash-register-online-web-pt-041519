@@ -18,6 +18,8 @@ class CashRegister
   # end
 
   # def items
+    basket = {}
+    
     
   # end
 
