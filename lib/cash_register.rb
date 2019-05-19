@@ -4,9 +4,9 @@ class CashRegister
   attr_accessor :items, :total
 
 
-  def initialize(total = 0, emp_disc.to_f)
+  def initialize(total = 0, emp_disc)
     @total = total
-    @emp_disc = emp_disc
+    @emp_disc = emp_disc.to_f
     @shopping_cart = [ @items = []]
     apply_discount(emp_disc)
   end
