@@ -14,7 +14,7 @@ class CashRegister
     @total += unit_price
   end
   
-  def apply_discount(num = num / 100)
+  def apply_discount(num)
     @total - num / 100
    
   
