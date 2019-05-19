@@ -23,6 +23,7 @@ class CashRegister
       @total += unit_price * qty
     else
     @total += unit_price
+    end
   end
   
   # def void_last_transaction()
