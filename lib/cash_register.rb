@@ -8,6 +8,7 @@ class CashRegister
     @emp_disc = emp_disc
     @shopping_cart = {:names => @items = []}
     apply_discount(emp_disc)
+    emp_disc
   end
   
   def apply_discount(num = 0)
