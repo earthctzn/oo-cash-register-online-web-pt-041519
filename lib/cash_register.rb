@@ -5,21 +5,21 @@ class CashRegister
     @emp_disc = apply_discount
   end
   
-  def add_item(item, unit_price = 0.0)
+  # def add_item(item, unit_price = 0.0)
   
-  end
+  # end
   
-  def apply_discount()
+  # def apply_discount()
   
-  end
+  # end
   
-  def void_last_transaction()
+  # def void_last_transaction()
   
-  end
+  # end
 
-  def items
+  # def items
     
-  end
+  # end
 
 
 
