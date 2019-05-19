@@ -5,13 +5,12 @@ class CashRegister
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
-    @shopping_cart = {:names => @items}
+    @shopping_cart = {:names => @items = []}
     discount(emp_disc)
   end
   
   def discount(num = 0)
     @total - @total * num / 100
-     
   end
   
   def total
