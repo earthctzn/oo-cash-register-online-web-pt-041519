@@ -14,9 +14,7 @@ class CashRegister
     grand_total = @total - @total * num / 100
     return "After the discount, the total comes to $#{@total += grand_total}"
   end 
-  
 
-  end
   
   def total
     @total
