@@ -24,12 +24,10 @@ class CashRegister
   def add_item(product_name, unit_price = 0.0, qty = 1)
     count=0 
     while count < qty
-    if @items(qty, product_name)
-      @total += unit_price * qty
-    else
       @total += unit_price
       @items << product_name
     end
+    count += 1
   end
   
   # def void_last_transaction()
