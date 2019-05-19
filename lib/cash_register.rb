@@ -1,7 +1,7 @@
 class CashRegister
   
   attr_accessor :items, :total
-  @@basket = {}
+  @@basket = []
 
   def initialize(total = 0.0, emp_disc = 0)
     @total = total
@@ -9,12 +9,14 @@ class CashRegister
   end
   
   def add_item(item, unit_price = 0.0)
-    @@basket[item.to_sym => unit_price]
+    @@basket << item
+    @total += unit_price
   end
   
-  #def apply_discount()
+  def apply_discount(num = 0)
+    
   
-  # end
+  end
   
   # def void_last_transaction()
   
