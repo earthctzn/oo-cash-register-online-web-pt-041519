@@ -15,9 +15,8 @@ class CashRegister
   end
   
   def apply_discount(num)
-    @total * num / 
-   
-  
+    m = @total * num / 100
+     @total - m
   end
   
   # def void_last_transaction()
