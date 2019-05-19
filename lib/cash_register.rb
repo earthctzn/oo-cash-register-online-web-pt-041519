@@ -8,9 +8,9 @@ class CashRegister
     apply_discount(emp_disc)
   end
   
-  # def add_item(item, unit_price = 0.0)
-  
-  # end
+  def add_item(item, unit_price = 0.0)
+    @@basket[item.to_sym]
+  end
   
   def apply_discount()
   
