@@ -7,7 +7,7 @@ class CashRegister
   def initialize(emp_disc = nil)
     total = 0
     @total = total
-    @emp_disc = emp_disc
+    @emp_disc = emp_disc.to_f
     @items = []
     @transactions = []
     apply_discount
@@ -34,7 +34,7 @@ class CashRegister
   # end 
   def apply_discount
     if @emp_disc != nil
-      discount_percent = @discount.to_f/100.to_f
+      discount_percent = @discount/100.to_f
       @total = @total - @total * discount_percent
       "After the discount, the total comes to $#{@total.to_i}."
     else
