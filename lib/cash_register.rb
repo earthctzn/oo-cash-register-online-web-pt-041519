@@ -41,9 +41,6 @@ class CashRegister
   #   end
   # end
   
-  # def discount
-  # @discount
-  # end
 
   
   def void_last_transaction
