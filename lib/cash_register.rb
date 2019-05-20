@@ -7,7 +7,7 @@ class CashRegister
   def initialize(emp_disc = 0)
     total = 0
     @total = total
-    @emp_disc = emp_disc.to_f
+    @emp_disc = emp_disc
     @items = []
     @transactions = []
     apply_discount
