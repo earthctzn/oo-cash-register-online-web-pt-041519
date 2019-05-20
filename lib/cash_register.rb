@@ -20,7 +20,7 @@ class CashRegister
       @items << product_name
       count += 1
     end
-    
+    @transactions << unit_price
   end
   
   def apply_discount
@@ -45,7 +45,7 @@ class CashRegister
 
   
   def void_last_transaction
-  
+    @transactions.pop
   end
 
   def items
