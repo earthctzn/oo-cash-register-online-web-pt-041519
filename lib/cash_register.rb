@@ -23,14 +23,14 @@ class CashRegister
     @transactions << unit_price
   end
   
-  def apply_discount
-    if @discount
-      "There is no discount to apply."
-      #binding.pry
+  # def apply_discount
+  #   if @discount
+  #     "There is no discount to apply."
+  #     #binding.pry
      
-    else 
-      "After the discount, the total comes to $#{@total -= (@total * (@discount/100.0)).to_i}."  
-    end
+  #   else 
+  #     "After the discount, the total comes to $#{@total -= (@total * (@discount/100.0)).to_i}."  
+  #   end
         
   end
   # def apply_discount
