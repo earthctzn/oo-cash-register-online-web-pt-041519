@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :items, :total, :items
 
 
-  def initialize(emp_disc = nil)
+  def initialize(emp_disc = 0)
     total = 0
     @total = total
     @emp_disc = emp_disc.to_f
@@ -24,10 +24,8 @@ class CashRegister
   end
   
   def apply_discount
-     if @emp_disc != nil
-       grand_total = @emp_disc/100.to_f
-       @total = @total - @total * grand_total
-       "After the discount, the total comes to $#{@total.to_i}."
+     if @emp_disc == 0 
+       
      else
        "There is no discount to apply."
     end 
