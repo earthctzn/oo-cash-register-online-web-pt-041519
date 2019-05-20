@@ -60,8 +60,6 @@ describe 'CashRegister' do
 
     context 'the cash register was not initialized with an employee discount' do
       it 'returns a string error message that there is no discount to apply' do
-          cash_register_with_discount.add_item("macbook air", 1000)
-          cash_register_with_discount.apply_discount
         expect(cash_register.apply_discount).to eq("There is no discount to apply.")
       end
     end
