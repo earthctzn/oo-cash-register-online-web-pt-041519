@@ -29,7 +29,7 @@ class CashRegister
      end
      
        @total -= @total * @emp_disc/100
-      "After the discount, the total comes to $#{@total.to_i}."   
+      "After the discount, the total comes to $#{@total}."   
   end 
  
   def discount
