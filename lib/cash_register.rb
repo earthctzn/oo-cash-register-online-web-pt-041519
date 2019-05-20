@@ -1,7 +1,7 @@
 require "pry"
 class CashRegister
   
-  attr_accessor :items, :total, :items
+  attr_accessor :items, :total
   
   
   def initialize(emp_disc = 0)
@@ -10,7 +10,6 @@ class CashRegister
     @discount = emp_disc
     @items = []
     @transactions = []
-    #apply_discount
   end
   
   def add_item(product_name, unit_price = 0.0, qty = 1)
@@ -49,9 +48,9 @@ class CashRegister
     @total
   end
   
-  def items
-    @items
-  end
+  # def items
+  #   @items
+  # end
   
   def void_last_transaction
     void = @transactions.pop
