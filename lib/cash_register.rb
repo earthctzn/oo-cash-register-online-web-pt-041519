@@ -5,7 +5,7 @@ class CashRegister
   attr_reader :discount
   
   
-  def initialize(emp_disc = 0)
+  def initialize(emp_disc = nil)
 
     @total = 0
     @discount = emp_disc
