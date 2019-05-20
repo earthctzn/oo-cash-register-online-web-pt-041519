@@ -1,9 +1,9 @@
 require "pry"
 class CashRegister
   
-  attr_accessor :items, :total, :items, :discount
-
-
+  attr_accessor :items, :total, :items
+  
+  
   def initialize(discount = 0)
     total = 0
     @total = total
@@ -31,33 +31,22 @@ class CashRegister
     @total -= @total * @discount/100
       "After the discount, the total comes to $#{@total}."   
   end 
- 
+  
   def discount
    @discount
   end
-    
-  
+
   def total
     @total
   end
   
-
+  def items
+    @items
+  end
   
   def void_last_transaction
     void = @transactions.pop
     @items.pop
     @total -= void
   end
-
-  def items
-    @items
-  end
-
-
-
-
-
-
-
-
 end
