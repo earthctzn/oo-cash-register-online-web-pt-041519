@@ -2,6 +2,7 @@ require "pry"
 class CashRegister
   
   attr_accessor :items, :total
+  attr_reader :discount
   
   
   def initialize(emp_disc = 0)
@@ -40,12 +41,8 @@ class CashRegister
   #   end
   # end
   
-  def discount
-   @discount
-  end
-
-  # def total
-  #   @total
+  # def discount
+  # @discount
   # end
 
   
