@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :items, :total
 
 
-  def initialize( *emp_disc)
+  def initialize(emp_disc)
     total = 0
     @total = total
     @emp_disc = emp_disc.to_f
