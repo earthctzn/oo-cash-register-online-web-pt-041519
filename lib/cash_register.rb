@@ -2,12 +2,12 @@ require "pry"
 class CashRegister
   
   attr_accessor :items, :total
+@@shopping_cart = [ @items = []]
 
-
-  def initialize(total=0, emp_disc=0)
+  def initialize(total = 0, emp_disc = 0)
     @total = total
     @emp_disc = emp_disc.to_f
-    @shopping_cart = [ @items = []]
+    
     apply_discount
   end
   
@@ -24,7 +24,6 @@ class CashRegister
   def apply_discount
     grand_total = @total - @total * @emp_disc.to_f / 100
     @total = grand_total
-    #binding.pry
     return "After the discount, the total comes to $#{grand_total}"
   end 
   
