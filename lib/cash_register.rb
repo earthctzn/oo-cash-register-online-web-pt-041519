@@ -27,8 +27,8 @@ class CashRegister
      if @emp_disc == 0 
        "There is no discount to apply."
      end
-     grand_total = @emp_disc/100.to_f
-       @total = @total - @total * grand_total
+     
+       @total = @total - @total * @emp_disc/100
       "After the discount, the total comes to $#{@total.to_i}."
        
     end 
