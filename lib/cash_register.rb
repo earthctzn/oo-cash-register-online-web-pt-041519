@@ -2,7 +2,7 @@ require "pry"
 class CashRegister
   
   attr_accessor :items, :total
-@@shopping_cart = [ @items = []]
+  @@shopping_cart = [ @items = []]
 
   def initialize(total = 0, emp_disc = 0)
     @total = total
