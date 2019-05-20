@@ -10,7 +10,7 @@ class CashRegister
     @discount = emp_disc
     @items = []
     @transactions = []
-    apply_discount
+    #apply_discount
   end
   
   def add_item(product_name, unit_price = 0.0, qty = 1)
