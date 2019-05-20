@@ -44,13 +44,10 @@ class CashRegister
    @discount
   end
 
-  def total
-    @total
-  end
-  
-  # def items
-  #   @items
+  # def total
+  #   @total
   # end
+
   
   def void_last_transaction
     void = @transactions.pop
